@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add these custom styles for the slider */
+.slick-slider {
+  @apply relative;
+}
+
+.slick-list {
+  @apply overflow-hidden;
+}
+
+.slick-slide > div {
+  @apply mx-2;
+}
+
+.slick-prev,
+.slick-next {
+  @apply absolute top-1/2 transform -translate-y-1/2 z-10 cursor-pointer;
+}
+
+.slick-prev {
+  @apply left-4;
+}
+
+.slick-next {
+  @apply right-4;
+}
+
+.slick-dots {
+  @apply absolute bottom-4 left-0 right-0 flex justify-center;
+}
+
+.slick-dots li {
+  @apply mx-1;
+}
+
+.slick-dots li button {
+  @apply w-3 h-3 rounded-full bg-white opacity-50 transition-opacity duration-200;
+}
+
+.slick-dots li.slick-active button {
+  @apply opacity-100;
+}
+
